@@ -41,7 +41,6 @@ export class WiredHorizon extends WiredBase {
         margin-block-start: 0em;
         margin-block-end: 0em;
       }
-
       .horizonLabel {
         color: var(--wired-horizon-label-color, #000);
         font-size: var(--wired-horizon-font-size, 10px);
@@ -98,8 +97,6 @@ export class WiredHorizon extends WiredBase {
   }
 
   updated() {
-    console.log(this.labels)
-    console.log(this.series)
     const svg = (this.shadowRoot!.getElementById("svg") as any) as SVGSVGElement
     while (svg.hasChildNodes()) {
       svg.removeChild(svg.lastChild!)
