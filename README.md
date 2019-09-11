@@ -1,4 +1,4 @@
-![wired horizon](https://cdn.rawgit.com/bvkimball/wired-horizon/example/horizon-chart.gif)
+![wired horizon](https://rawcdn.githack.com/bvkimball/wired-horizon/7598df66ad1e54cdf6aeefb083c20c2f825def06/example/horizon-chart.gif)
 
 # wired-horizon
 
@@ -23,7 +23,7 @@ Import wired-horizon definition into your HTML page:
 Or into your module script:
 
 ```javascript
-import { WiredHorizon } from "wired-horizon"
+import { WiredHorizon } from "@bvkimball/wired-horizon"
 ```
 
 Use it in your web page:
