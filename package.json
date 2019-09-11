@@ -1,6 +1,6 @@
 {
   "name": "@bvkimball/wired-horizon",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Hand-drawn sketchy horizon chart - web component",
   "source": "src/wired-horizon.ts",
   "main": "lib/wired-horizon.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wiredjs/wired-elements.git"
+    "url": "git+https://github.com/bvkimball/wired-horizon.git"
   },
   "keywords": [
     "horizon chart",
