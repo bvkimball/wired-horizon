@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script type="module" src="../lib/wired-horizon.mjs"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+      wired-horizon {
+        margin: 10px;
+      }
+      .custom {
+        --wired-band-color-1: rgba(220, 0, 50, 0.1);
+        --wired-horizon-label-color: green;
+        --wired-horizon-font-size: 24px;
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <wired-horizon bands="3" series="[10,30,25,50,15,15,35,9,18]"></wired-horizon>
+
+    <wired-horizon bands="1" series="[10,30,25,50,15,15,35,9,18]"></wired-horizon>
+
+    <wired-horizon id="realtime" max="100" bands="4" labels='["older", "newer"]' series="[10,30,25,50,15,15,35,9,18]"></wired-horizon>
+
+    <script>
+      const horizon = document.getElementById("realtime")
+      let i = 0
+      setInterval(() => {
+        let variance = Math.round(Math.random() * 10)
+        const [head, ...tail] = horizon.series
+        horizon.series = [...tail, Math.round(Math.abs(Math.cos(i++) * (100 - variance)))]
+      }, 1000)
+    </script>
+  </body>
+</html>

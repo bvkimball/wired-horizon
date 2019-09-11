@@ -1,0 +1,38 @@
+{
+  "name": "@bvkimball/wired-horizon",
+  "version": "1.0.0",
+  "description": "Hand-drawn sketchy horizon chart - web component",
+  "source": "src/wired-horizon.ts",
+  "main": "lib/wired-horizon.js",
+  "module": "lib/wired-horizon.mjs",
+  "types": "lib/wired-horizon.d.ts",
+  "scripts": {
+    "build": "bake",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiredjs/wired-elements.git"
+  },
+  "keywords": [
+    "horizon chart",
+    "webcomponent",
+    "web component",
+    "rough",
+    "sketchy",
+    "hand-drawn",
+    "hand drawn",
+    "wireframe"
+  ],
+  "author": "Brian Kimball <bvkimball@gmail.com> ",
+  "license": "MIT",
+  "dependencies": {
+    "wired-lib": "^1.0.0"
+  },
+  "devDependencies": {
+    "@niht/chef": "0.0.5",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.1"
+  }
+}
