@@ -1,6 +1,6 @@
 {
   "name": "@bvkimball/wired-horizon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hand-drawn sketchy horizon chart - web component",
   "source": "src/wired-horizon.ts",
   "main": "lib/wired-horizon.js",
